@@ -1,0 +1,62 @@
+.contenido{
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+.contenido p{
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+.contenido .TextCentrado{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+.imagen-contenido{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.Unete-imagen{
+    width: 40%;
+    border: 5px solid #006847; 
+    margin-bottom: 25px;
+}
+
+.contenido .TextCentradoDir{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+.Imagenes-contenido {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.Visita-imagen{
+    margin-right: 10px;
+    margin-left: 50px;
+    width: 35%;
+    height: 35%;
+}
+
+.Imagenes-contenido a .Mapa-imagen{
+    margin-right: 0px;
+    margin-left: 20px;
+    width: 62%;
+}

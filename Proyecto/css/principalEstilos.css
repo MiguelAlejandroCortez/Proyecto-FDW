@@ -1,0 +1,284 @@
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: sans-serif; font-weight: bold;
+}
+
+/*primer menu*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #dfebe7;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    height: 100px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #006847;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:none;
+}
+
+.menu-selected:hover:before {
+    display: block;
+}
+
+.menu nav ul li a{
+    color: #777777;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+    color: #006847;
+}
+
+.menu .text-menu-selected:hover{
+    color: #006847; 
+}
+
+/*Segundo menu*/
+
+.SegundoMenu{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 100px; 
+    background-color:#006847;
+}
+
+.menu-horizontal{
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu-horizontal > li >a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: #023827;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+}
+
+.menu-vertical li a{
+    display: block;
+    color:white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.shop-category {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    pointer-events: none; /* para evitar que este elemento sea clickeable */
+    position: relative;
+    top: 13px;
+}
+
+
+/*footer*/
+.container-footer{
+    color: black;
+    padding: 20px;
+    top: 80px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 0px 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+footer .redes-footer .fa-facebook-f:hover{
+    background: #41579A;
+    color: #fff;
+} 
+ 
+footer .redes-footer .fa-google-plus-g:hover{
+    background: #DE4C34;
+    color: #fff;
+} 
+
+footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+} 
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border:none;
+    height: 2px;
+    background: #c0c0c07a;
+}
+
+.container-footer h4{
+    text-align: center;
+    color: #8e8e8e;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.container-footer footer .redes-iconos{
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer footer .logo-footer, .container-footer footer .redes-iconos, .container-footer footer hr, .container-footer footer h4{
+    align-self: center;
+    justify-self: center;
+}
+
+
+/*Diseno responsivo*/
+
+
+@media screen and (min-width: 1021px) {
+ 
+    .header-content,
+    /*.SegundoMenu,*/
+    .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (min-width:681px) and (max-width: 1020px){
+
+    .SegundoMenu{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu-horizontal li {
+        font-size: 0.8rem;
+    }
+
+    .menu-vertical {
+        text-align: left;
+    }
+    .menu-vertical li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:680px){
+    .SegundoMenu{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .SegundoMenu nav{
+        height: 50px;
+    }
+
+    .menu-horizontal li {
+        font-size: 0.7rem;
+    }
+
+    .menu-vertical {
+        text-align: left;
+    }
+    .menu-vertical li {
+        width: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+.producto-container {
+    border: 5px solid #006847;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    font-size: 20px;
+    color: black;
+}
+
+.precio {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+    }
+    .producto-container {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+    }
+
+    .nombre {
+        font-size: 15px;
+        color: black;
+    }
+}
